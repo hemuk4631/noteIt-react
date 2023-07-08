@@ -28,6 +28,7 @@ function App() {
   };
 
   const addNote = (note) => {
+    event.preventDefault();
     if (!note.title) {
       return toast.error("Please Add Title");
     }
