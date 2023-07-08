@@ -1,0 +1,140 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Roboto Mono', monospace;
+}
+body {
+  background: #eee;
+  padding:0 2%;
+}
+header {
+  
+  border-end-end-radius: 30%;
+  border-end-start-radius: 7%;
+  border-start-start-radius: 7%;
+  border-start-end-radius: 7%;
+ 
+  display: inline-block;
+  box-shadow: 0px 0px 17px 0 rgb(0 0 0 / 70%);
+  position: sticky;
+  top:3%;
+  
+  z-index: 1;
+}
+
+
+
+
+
+header h1{
+  margin-top:5%;
+  font-size: 1.5em;
+  
+}
+
+
+.footer-wrapper{
+  color: gray;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding:4px;
+  z-index: -1;
+}
+
+
+
+  .note{
+  display: inline-block;
+  margin: 1%; 
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  
+}
+ .note h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+.note button{
+  position: relative;
+  background: #1bbe6f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  float: right;
+}
+
+form {
+  position: relative;
+  max-width: 50%;
+  margin:7% auto;  
+  
+}
+ form input,
+form textarea {
+  outline: none;
+  font-family: inherit;
+  resize: none;
+  
+} 
+form textarea{
+   margin-top: 1%;
+}
+form button.btn{
+  position: relative;
+  background: #1bbe6f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  float: right;
+}
+form button.btn:hover{
+  background-color: #198754;
+}
+
+
+
+/* Media Queries */
+
+ @media (max-width: 768px) {
+  header h1{
+    font-size:1.2em;
+  }
+  form {
+    max-width: 80%;
+  }
+  .form-control{
+    font-size:1.2em;
+  }
+  .note h1{
+    font-size:1.2em;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+
+}
+
+@media (max-width: 480px) {
+  header h1{
+    font-size:1em;
+  }
+  form {
+    max-width: 90%;
+  }
+  .form-control{
+    font-size:1em;
+  }
+  .note h1{
+    font-size: 1em;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+}
+
