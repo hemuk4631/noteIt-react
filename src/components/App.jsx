@@ -18,12 +18,17 @@ function App() {
 
   const fetchNotes = () => {
     axios
-      .get(`${env.LOCAL_URL}/api/notes`)
+      .get(`${env.LOCAL_URL}/api/notes`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        withCredentials: true,
+      })
       .then((response) => {
-        setNotes(response.data.data);
+        setNotes(response.data.notes);
       })
       .catch((error) => {
-        toast.error(error.response.data.message);
+        toast.error(error.message);
       });
   };
 
@@ -37,7 +42,12 @@ function App() {
     }
     setLoading(true);
     axios
-      .post(`${env.LOCAL_URL}/api/notes`, note)
+      .post(`${env.LOCAL_URL}/api/notes`, note, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        withCredentials: true,
+      })
       .then((response) => {
         setAddNotes({
           title: "",
@@ -54,7 +64,12 @@ function App() {
   const deleteNote = (id) => {
     setLoading(true);
     axios
-      .delete(`${env.LOCAL_URL}/api/notes/${id}`)
+      .delete(`${env.LOCAL_URL}/api/notes/${id}`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        withCredentials: true,
+      })
       .then((response) => {
         setLoading(false);
         toast.error(response.data);

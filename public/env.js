@@ -1,7 +1,6 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
   "APPDATA": "C:\\Users\\hp\\AppData\\Roaming",
-  "BACKEND_URL": "https://backend-ten-taupe.vercel.app",
   "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_19012_RRQLGGWASMOVVAFM",
   "COLOR": "1",
   "COLORTERM": "truecolor",
@@ -15,6 +14,7 @@ window.env = {
   "EFC_5876": "1",
   "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
   "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+  "GIT_ASKPASS": "c:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
   "HOME": "C:\\Users\\hp",
   "HOMEDRIVE": "C:",
   "HOMEPATH": "\\Users\\hp",
@@ -78,7 +78,11 @@ window.env = {
   "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-V4ES4F5K",
   "USERNAME": "hp",
   "USERPROFILE": "C:\\Users\\hp",
+  "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+  "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+  "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+  "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-106e58fab9-sock",
   "VSCODE_INJECTION": "1",
-  "VSCODE_NONCE": "3b88c667-4e6e-4454-9c43-d8762f61a3e4",
+  "VSCODE_NONCE": "432303ca-5b9e-454f-9972-c39c587736b5",
   "windir": "C:\\WINDOWS"
 };
