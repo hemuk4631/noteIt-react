@@ -21,7 +21,7 @@ window.env = {
   "INIT_CWD": "F:\\hemuk4631\\noteit-react-app\\frontend",
   "LANG": "en_US.UTF-8",
   "LOCALAPPDATA": "C:\\Users\\hp\\AppData\\Local",
-  "LOCAL_URL": "http://localhost:5000",
+  "LOCAL_URL": "https://note-it-server.vercel.app",
   "LOGONSERVER": "\\\\LAPTOP-V4ES4F5K",
   "NODE": "C:\\Program Files\\nodejs\\node.exe",
   "NODE_EXE": "C:\\Program Files\\nodejs\\\\node.exe",
