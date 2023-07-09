@@ -6,7 +6,6 @@ import Note from "./Note";
 import Footer from "./Footer";
 import { toast, ToastContainer } from "react-toastify";
 import Loader from "./Loader";
-import env from "react-dotenv";
 
 function App() {
   const LOCAL_URL="http://localhost:5000"
