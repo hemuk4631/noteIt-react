@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./Header";
 import InputField from "./InputField";
@@ -9,6 +9,7 @@ import Loader from "./Loader";
 import env from "react-dotenv";
 
 function App() {
+  const LOCAL_URL="http://localhost:5000"
   const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [addNotes, setAddNotes] = useState({
@@ -18,7 +19,7 @@ function App() {
 
   const fetchNotes = () => {
     axios
-      .get(`${env.LOCAL_URL}/api/notes`, {
+      .get(`${LOCAL_URL}/api/notes`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -42,7 +43,7 @@ function App() {
     }
     setLoading(true);
     axios
-      .post(`${env.LOCAL_URL}/api/notes`, note, {
+      .post(`${LOCAL_URL}/api/notes`, note, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -64,7 +65,7 @@ function App() {
   const deleteNote = (id) => {
     setLoading(true);
     axios
-      .delete(`${env.LOCAL_URL}/api/notes/${id}`, {
+      .delete(`${LOCAL_URL}/api/notes/${id}`, {
         headers: {
           "Content-Type": "application/json",
         },
