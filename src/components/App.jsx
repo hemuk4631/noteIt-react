@@ -8,7 +8,7 @@ import { toast, ToastContainer } from "react-toastify";
 import Loader from "./Loader";
 
 function App() {
-  const LOCAL_URL="http://localhost:5000"
+  const LOCAL_URL="https://note-it-backend-sage.vercel.app"
   const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [addNotes, setAddNotes] = useState({
