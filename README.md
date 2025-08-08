@@ -5,3 +5,7 @@
 - React.js
 - JavaScript
 - CSS
+
+## Features
+- Notes creation and store the notes into mongoDB database.
+- Notes deleletion and listing view.
